@@ -1,13 +1,13 @@
 export const profile = {
-  name: "Zeynab Movasaqpour",
-  role: "Web Developer",
+  name: "Elikem Buertey",
+  role: "Software Engineer",
   avatar: "https://avatars.githubusercontent.com/u/30770159?v=4",
-  bio: "Web developer with a solid background in backend and WordPress development, currently focused on building modern, scalable interfaces using React, TypeScript, and Next.js.",
-  contactLink: "mailto:zeynab.mvs@gmail.com",
+  bio: "I'm a Software Engineer with a strong foundation in both frontend and backend development, currently focused on building modern, scalable web applications using React, Node.js, and TypeScript.",
+  contactLink: "mailto:elikembuertey@gmail.com",
   links: [
     {
-      href: "https://www.linkedin.com/in/zeynab-movasaqpoor/",
-      label: "zeynab-movasaqpoor",
+      href: "https://www.linkedin.com/in/elikem-buertey/",
+      label: "elikem-buertey",
       icon: (
         <svg
           stroke="currentColor"
@@ -26,8 +26,8 @@ export const profile = {
       to: "linkedIn",
     },
     {
-      href: "https://github.com/zeynabmvs",
-      label: "zeynabmvs",
+      href: "https://github.com/Buerkem",
+      label: "Buerkem",
       icon: (
         <svg
           stroke="currentColor"

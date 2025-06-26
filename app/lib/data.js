@@ -23,7 +23,7 @@ export const profile = {
         </svg>
       ),
       active: true,
-      to: "linkedIn"
+      to: "linkedIn",
     },
     {
       href: "https://github.com/zeynabmvs",
@@ -43,7 +43,7 @@ export const profile = {
         </svg>
       ),
       active: true,
-      to: "github"
+      to: "github",
     },
     {
       href: "https://twitter.com/john-doe",
@@ -63,13 +63,15 @@ export const profile = {
         </svg>
       ),
       active: false,
-      to: "twitter"
+      to: "twitter",
     },
   ],
   aboutMe: [
-    "Hi, I’m Zeynab, a web developer with over four years of experience in web development. I’ve worked on a variety of projects, both solo and in teams, and I’m always looking for new challenges that push me to grow and learn.",
-    "Over the past 9+ months, I’ve been diving deep into modern frontend tools like React, Next.js, and TypeScript by building open-source projects. I love creating clean, user-friendly interfaces and finding smart ways to automate repetitive tasks.",
-    "I’ve been collaborating on practice projects in a frontend team, where I contributed as both a coder and code reviewer. Through this experience, I developed the soft skills of a developer, improving communication, collaboration, and team workflow.",
+    "I'm a passionate Software Engineer with over 4 years of experience in developing, and deploying robust web applications. My expertise spans both frontend and backend technologies, enabling me to build end-to-end solutions that are efficient, scalable, and user-friendly.",
+    "On the frontend, I specialize in crafting responsive and intuitive interfaces using modern frameworks and libraries.",
+    "On the backend, I develop secure and high-performance APIs and server-side logic that power seamless digital experiences.",
+    "Whether collaborating with cross-functional teams or leading development efforts, I’m driven by a commitment to quality, innovation, and continuous learning.",
+    "I enjoy solving complex problems and turning ideas into impactful software solutions.",
   ],
 };
 
@@ -133,7 +135,7 @@ export const skills = {
       name: "Accessibility",
       icon: "/tools/figma.svg",
     },
-        {
+    {
       name: "Sass",
       icon: "/tools/sass.svg",
     },
@@ -286,7 +288,7 @@ export const projects = [
     liveSite: "https://podcraft-roan.vercel.app/",
     priority: 1,
     techStack: [5, 3, 17, 18, 9, 21, 22, 19],
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
   {
     id: "portfolio",
@@ -294,12 +296,12 @@ export const projects = [
     description: "A minimal, lightweight developer portfolio",
     repoUrl: "https://github.com/zeynabmvs/zeynab-dev",
     imageUrl: "/projects/portfolio.png",
-    projectLangs: [0], 
+    projectLangs: [0],
     tags: ["Portfolio", "Personal Website", "Next.js", "TailwindCSS"],
     liveSite: "https://zeynab-dev.vercel.app/",
     priority: 1,
     techStack: [5, 3, 9, 27, 19],
-    hasDetailsPage: true
+    hasDetailsPage: true,
   },
   {
     id: "recipedia",
@@ -319,7 +321,7 @@ export const projects = [
     liveSite: "https://food-recipe-react-dun.vercel.app/",
     priority: 2,
     techStack: [4, 26, 9, 15],
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
   {
     id: "kanba",
@@ -332,7 +334,7 @@ export const projects = [
     liveSite: "https://kanba-hazel.vercel.app/",
     priority: 1,
     techStack: [4, 7, 10, 19],
-    hasDetailsPage: true
+    hasDetailsPage: true,
   },
   {
     id: "world-ranks",
@@ -356,7 +358,7 @@ export const projects = [
     liveSite: "https://zeynabmvs.github.io/world-ranks/",
     priority: 2,
     techStack: [4, 9, 8, 26, 15],
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
   {
     id: "acme-landing",
@@ -375,7 +377,7 @@ export const projects = [
     liveSite: "https://zeynabmvs.github.io/acme_landing/",
     priority: 0,
     techStack: [0, 1, 2],
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
   {
     id: "gitHub-profile",
@@ -390,7 +392,7 @@ export const projects = [
     priority: 3,
     techStack: [4, 9, 15],
     liveSite: "https://github-profile-olive-phi.vercel.app",
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
   {
     id: "cafe-store",
@@ -411,7 +413,7 @@ export const projects = [
     liveSite: "https://nextjs-cafe-store.vercel.app/",
     priority: 0,
     techStack: [5, 11, 3, 9, 19],
-    hasDetailsPage: false
+    hasDetailsPage: false,
   },
 ];
 

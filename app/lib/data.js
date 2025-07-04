@@ -1,8 +1,8 @@
 export const profile = {
   name: "Elikem Buertey",
   role: "Software Engineer",
-  avatar: "https://avatars.githubusercontent.com/u/30770159?v=4",
-  bio: "I'm a Software Engineer with a strong foundation in both frontend and backend development, currently focused on building modern, scalable web applications using React, Node.js, and TypeScript.",
+  avatar: "/images/elikem_buertey.jpg",
+  bio: "I'm a Software Engineer with a strong foundation in both frontend and backend development, building and deploying scalabe web applications using modern technologies.",
   contactLink: "mailto:elikembuertey@gmail.com",
   links: [
     {
@@ -226,7 +226,7 @@ export const experiences = [
       "Planning to contribute to open-source projects to grow professional experience.",
     ],
     imageUrl: "https://placehold.co/100x100",
-    priority: 0,
+    priority: 2,
   },
   {
     title: "Freelance Projects",
@@ -241,7 +241,7 @@ export const experiences = [
       "Handled server setup and full deployment of WordPress websites.",
     ],
     imageUrl: "https://placehold.co/100x100",
-    priority: 2,
+    priority: 1,
   },
   {
     title: "Diba Engineering Co.",
@@ -258,7 +258,7 @@ export const experiences = [
       "Collaborated in a small, cross-functional team of developers, designers, and managers.",
     ],
     imageUrl: "https://placehold.co/100x100",
-    priority: 1,
+    priority: 0,
   },
 ];
 

@@ -6,11 +6,11 @@ type AvatarProps = { src: string; alt: string };
 const Avatar: React.FC<AvatarProps> = ({ src, alt }) => (
   <div className="relative size-24 md:size-36 lg:mx-auto">
     <Image
-      className="rounded-full object-cover border border-zinc-100"
+      className="rounded-full object-contain border border-zinc-100"
       src={src}
       alt={alt}
-      width={300}
-      height={300}
+      width={250}
+      height={250}
       unoptimized={true}
     />
   </div>
@@ -26,7 +26,9 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({
   <div className="flex flex-row md:flex-col items-center md:items-start w-full gap-2 md:gap-4">
     <Avatar src={avatar} alt={`${name}'s profile`} />
     <div className="flex flex-col items-start">
-      <h1 className="md:mt-2 text-lg md:text-xl font-bold text-primary dark:text-primary-dark">{name}</h1>
+      <h1 className="md:mt-2 text-lg md:text-xl font-bold text-primary dark:text-primary-dark">
+        {name}
+      </h1>
       <h2 className="text-sm font-medium ">{role}</h2>
     </div>
   </div>

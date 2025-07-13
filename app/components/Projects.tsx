@@ -67,73 +67,62 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <article className="card overflow-hidden flex flex-col h-full">
-      <div
-        className={`project-image relative w-full aspect-3/2 overflow-hidden rounded-t-lg ${
-          showOverlay ? "active" : ""
-        }`}
-        onClick={handleInteraction}
-        onMouseEnter={() => setShowOverlay(true)}
-        onMouseLeave={() => setShowOverlay(false)}
-        onFocusCapture={() => setShowOverlay(true)}
-        onBlurCapture={(e) => {
-          if (!projectCardRef.current?.contains(e.relatedTarget)) {
-            setShowOverlay(false);
-          }
-        }}
-        onKeyDown={(e) => {
-          // Only handle key events if the container itself is the target,
-          // allowing inner link elements to handle Enter normally.
-          if (e.currentTarget !== e.target) return;
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            handleInteraction();
-          }
-        }}
-        tabIndex={0}
-        role="button"
-        ref={projectCardRef}
+      <Link
+        href={liveSite}
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Live site"
+        aria-label={`Visit ${title} project's live site`}
       >
-        <Image
-          src={imageUrl}
-          alt={`${title} preview`}
-          fill
-          className="object-cover transition-transform duration-300"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
         <div
-          className={`overlay absolute inset-0 bg-primary/70 dark:bg-primary-20 flex items-center justify-center gap-4 transition-opacity duration-300 ${
-            showOverlay ? "opacity-100 visible" : "opacity-0 invisible"
+          className={`project-image relative w-full aspect-3/2 overflow-hidden rounded-t-lg ${
+            showOverlay ? "active" : ""
           }`}
+          onClick={handleInteraction}
+          onMouseEnter={() => setShowOverlay(true)}
+          onMouseLeave={() => setShowOverlay(false)}
+          onFocusCapture={() => setShowOverlay(true)}
+          onBlurCapture={(e) => {
+            if (!projectCardRef.current?.contains(e.relatedTarget)) {
+              setShowOverlay(false);
+            }
+          }}
+          onKeyDown={(e) => {
+            // Only handle key events if the container itself is the target,
+            // allowing inner link elements to handle Enter normally.
+            if (e.currentTarget !== e.target) return;
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              handleInteraction();
+            }
+          }}
+          tabIndex={0}
+          role="button"
+          ref={projectCardRef}
         >
+          <Image
+            src={imageUrl}
+            alt={`${title} preview`}
+            fill
+            className="object-cover transition-transform duration-300"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      </Link>
+
+      <div className="flex flex-col flex-grow p-4 ">
+        <header className="mb-2">
           <Link
-            className="p-2 bg-white rounded-full hover:bg-gray-200 cursor-pointer"
-            href={repoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            tabIndex={showOverlay ? 0 : -1}
-            title="Source code"
-            aria-label={`View ${title} project's source code`}
-          >
-            <CodeBracketIcon className="size-6 text-primary" />
-          </Link>
-          <Link
-            className="p-2 bg-white rounded-full hover:bg-gray-200 cursor-pointer"
             href={liveSite}
             target="_blank"
             rel="noopener noreferrer"
-            tabIndex={showOverlay ? 0 : -1}
             title="Live site"
             aria-label={`Visit ${title} project's live site`}
           >
-            <EyeIcon className="size-6 text-primary" />
+            <h3 className="text-primary dark:text-primary-dark font-semibold">
+              {title}
+            </h3>
           </Link>
-        </div>
-      </div>
-      <div className="flex flex-col flex-grow p-4 ">
-        <header className="mb-2">
-          <h3 className="text-primary dark:text-primary-dark font-semibold">
-            {title}
-          </h3>
           <p className="text-sm mt-2 text-muted dark:text-muted-dark">
             {description}
           </p>

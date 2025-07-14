@@ -42,12 +42,6 @@ A minimal, lightweight, and high-performance personal portfolio built with Next.
 ## Installation
 
 ```
-# Clone the repository
-git clone https://github.com/zeynabmvs/zeynab-dev.git
-
-# Navigate to the project directory
-cd zeynab-dev
-
 # Install dependencies
 npm install
 
@@ -68,10 +62,6 @@ npm run dev
 ## Live Site
 
 [View Portfolio Live](https://zeynab-dev.vercel.app/) 
-
-## Case study
-
-[Read project's case study here](http://zeynab-dev.vercel.app/projects/portfolio)
 
 ## License
 

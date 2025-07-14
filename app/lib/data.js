@@ -2,7 +2,7 @@ export const profile = {
   name: "Elikem Buertey",
   role: "Software Engineer",
   avatar: "/images/elikem_buertey.jpg",
-  bio: "I'm a Software Engineer with a strong foundation in both frontend and backend development, building and deploying scalabe web applications using modern technologies.",
+  bio: "I'm a Software Engineer with a strong foundation in both frontend and backend development, building and deploying scalable web applications using modern technologies.",
   contactLink: "mailto:elikembuertey@gmail.com",
   links: [
     {
@@ -67,7 +67,7 @@ export const profile = {
     },
   ],
   aboutMe: [
-    "I'm a passionate Software Engineer with over 4 years of experience in developing, and deploying robust web applications. My expertise spans both frontend and backend technologies, enabling me to build end-to-end solutions that are efficient, scalable, and user-friendly.",
+    "I'm a passionate Software Engineer with close to 3 years of experience in developing, and deploying robust web applications. My expertise spans both frontend and backend technologies, enabling me to build end-to-end solutions that are efficient, scalable, and user-friendly.",
     "On the frontend, I specialize in crafting responsive and intuitive interfaces using modern frameworks and libraries.",
     "On the backend, I develop secure and high-performance APIs and server-side logic that power seamless digital experiences.",
     "Whether collaborating with cross-functional teams or leading development efforts, I’m driven by a commitment to quality, innovation, and continuous learning.",
@@ -210,8 +210,35 @@ export const skills = {
   ],
 };
 
-// Set priority to 0 to exclude in UI
 export const experiences = [
+  {
+    title: "Synod",
+    role: "Software Engineer",
+    duration: "Feb 2025 – Present",
+    description:
+      "Developed scalable backend services and optimized real-time healthcare data indexing systems for production workloads.",
+    responsibilities: [
+      "Built performant APIs using Node.js, Express, and TypeScript with async/await patterns.",
+      "Reduced data latency by 30% by integrating MySQL, Elasticsearch, and Redis in ingestion pipelines.",
+      "Automated multiple backend workflows and contributed to production-level system enhancements.",
+    ],
+    imageUrl: "https://placehold.co/100x100",
+    priority: 4,
+  },
+  {
+    title: "Ellemuel",
+    role: "Software Engineer, Full Stack",
+    duration: "Sep 2024 – Dec 2025",
+    description:
+      "Led development and deployment of backend infrastructure for a volunteer management platform with enhanced search and matching capabilities.",
+    responsibilities: [
+      "Built scalable APIs with Node.js (Express) and PostgreSQL; integrated Elasticsearch for fast search.",
+      "Deployed backend with AWS Elastic Beanstalk and implemented CI/CD pipelines.",
+      "Enabled skill-based volunteer matching and reminders, increasing assignment efficiency by 20%.",
+    ],
+    imageUrl: "https://placehold.co/100x100",
+    priority: 3,
+  },
   {
     title: "Open Source & Team Projects",
     role: "Frontend Developer",
@@ -230,35 +257,19 @@ export const experiences = [
   },
   {
     title: "Freelance Projects",
-    role: "WordPress Developer",
-    duration: "2020 - Present",
+    role: "Full Stack Web Developer",
+    duration: "2021 - Present",
     description:
-      "Worked as a freelance developer focusing on building client WordPress websites with clean, scalable, and multilingual code.",
+      "Worked with clients to build responsive and scalable full-stack web applications, focusing on frontend excellence with React and backend APIs using Node.js.",
     responsibilities: [
-      "Developed SEO-optimized and responsive WordPress themes from scratch.",
-      "Created custom plugins and widgets to meet specific client requirements.",
-      "Implemented multilingual features to support international audiences.",
-      "Handled server setup and full deployment of WordPress websites.",
+      "Designed and built dynamic frontend interfaces with React, Next.js, TypeScript, and Tailwind CSS.",
+      "Implemented secure user authentication, role-based access, and form validation.",
+      "Integrated REST and GraphQL APIs for seamless data operations.",
+      "Deployed applications on AWS using services like S3, EC2, and CloudFront.",
+      "Maintained clean Git workflows and communicated regularly with stakeholders.",
     ],
     imageUrl: "https://placehold.co/100x100",
     priority: 1,
-  },
-  {
-    title: "Diba Engineering Co.",
-    role: "Backend Developer",
-    duration: "2017 - 2019",
-    description:
-      "Worked in a cross-functional team to develop backend services and APIs for Android apps using Django REST Framework.",
-    responsibilities: [
-      "Developed RESTful APIs with Django REST Framework for mobile and web clients.",
-      "Built systems for an English learning platform, a quiz game, and an artist-student educational app.",
-      "Worked closely with Android developers to ensure efficient data exchange.",
-      "Used Swagger and SwapAPI for professional API documentation and testing.",
-      "Managed and optimized PostgreSQL and MySQL databases.",
-      "Collaborated in a small, cross-functional team of developers, designers, and managers.",
-    ],
-    imageUrl: "https://placehold.co/100x100",
-    priority: 0,
   },
 ];
 
